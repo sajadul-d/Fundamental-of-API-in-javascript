@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Notation</title>
+</head>
+<body>
+    
+
+   <script>
+       const user ={
+           id:38,
+           phone:01722,
+           name:"Dipu",
+           friends:['jamal','kamal','samal'],
+           friendsAge:[23,22,22,24],
+           lover:{
+               name:"jamila",
+               age:20,
+               color:"black"
+           }
+          
+       };
+       //Javascript object convert into JSON
+       const userJSON = JSON.stringify(user)//server a send as string
+       console.log(userJSON)
+       const userFromJSON = JSON.parse(userJSON)//parse JSON from server
+       console.log(userFromJSON)
+   </script>
+</body>
+</html>
